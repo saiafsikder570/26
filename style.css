@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: #121212; /* ডার্ক ব্যাকগ্রাউন্ড */
+    color: #e0e0e0; /* হালকা সাদা টেক্সট */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-header {
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2.8em;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #4CAF50; /* উজ্জ্বল সবুজ */
+    border: 2px solid #4CAF50;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+p {
+    color: #a0a0a0; /* কিছুটা হালকা ধূসর টেক্সট */
+    font-size: 1.1em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.roster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* responsive grid */
+    gap: 25px;
+}
+
+.group-card {
+    background-color: #1e1e1e; /* কার্ডের ব্যাকগ্রাউন্ড */
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.group-card:hover {
+    transform: translateY(-5px); /* হোভার করলে কার্ডটি উপরে উঠবে */
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3); /* সবুজ শ্যাডো */
+}
+
+.group-card h3 {
+    color: #4CAF50;
+    font-size: 1.5em;
+    margin-top: 0;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.group-card .leader {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.group-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.group-card ul li {
+    background-color: #2a2a2a;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 3px solid #4CAF50;
+}
